@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <!-- Css  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Scrpit  -->
+  <script src="./js/index.js" type="module" defer></script>
+</head>
+<body>
+  <div class="alert-error ">
+    Digite somente números
+  </div>
+  <div class="conteiner">
+
+    <main class="card">
+      <form >
+        <h1 class="title">Cálculo de IMC</h1>
+        
+        <div class="input-wrapper">
+          <label for="weight">Peso (kg)</label>
+          <input id="weight" type="text" placeholder="60">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="height">Altura (cm)</label>
+          <input id="height" type="text" placeholder="165">
+        </div>
+
+        <button type="submit">Calcular IMC 
+          <img src="./assets/arrow.svg" alt="seta apontando para direita">
+          </button>
+
+      </form>
+    </main>
+    
+  </div>
+  <div class="modal-wrapper ">
+    <div class="modal card">
+      <h2 class="title"> 
+        <span> tes </span> 
+        <button class="close"><img src="./assets/close.svg" alt="Image para fechar o pops" ></button>
+      </h2>
+    </div>
+  </div>
+</body>
+</html>
